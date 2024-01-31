@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini quiz</title>
+    <link rel="stylesheet" href="style_sheet2.css">
+    <script src="miniquiz.js"></script>
+    <!-- validates fully as of Dec. 5, Dec. 19, 2023 -->
+</head>
+<body>
+    <!-- created a quiz -->
+    <h1>Have You Accidentally Joined a Cult?</h1>
+
+    <form id="cultQuiz"> <!-- found info on forms from w3schools -->
+        <!-- https://www.w3schools.com/html/html_forms.asp -->
+        <p>1. Are you lonely and in desperate need of friends? And/or do you feel isolated from others? </p>
+        <label>
+            <input type="radio" name="q1" value="yes"> Yes <!-- found info on type radios from w3schools-->
+        </label>
+        <label>
+            <input type="radio" name="q1" value="no"> No
+        </label>
+
+        <p>2. Has someone recently invited you to meet their friends and are promoting a new lifestyle change?</p>
+        <label>
+            <input type="radio" name="q2" value="yes"> Yes
+        </label>
+        <label>
+            <input type="radio" name="q2" value="no"> No
+        </label>
+
+        <p>3. Have you found yourself selling supplies and promoting content you didn't think you would one year ago?</p>
+        <label>
+            <input type="radio" name="q3" value="yes"> Yes
+        </label>
+        <label>
+            <input type="radio" name="q3" value="no"> No
+        </label>
+
+        <p>4. Are there strict rules you have to follow based on activities or appearance 
+            (given to you by the people you surround yourself with)?</p>
+        <label>
+            <input type="radio" name="q4" value="yes"> Yes
+        </label>
+        <label>
+            <input type="radio" name="q4" value="no"> No
+        </label>
+
+        <p>5. Is questioning authority or critical thinking discouraged among your friends?</p>
+        <label>
+            <input type="radio" name="q5" value="yes"> Yes
+        </label>
+        <label>
+            <input type="radio" name="q5" value="no"> No
+        </label>
+
+        <br>
+        <br>
+        <input type="button" value="Submit Answers" onclick="calculateResult();">
+    </form>
+
+    <div id="result"></div>
+    <br>
+    <br>
+    <br>
+    <a href="home.html" class="returnButton">« Back to Homepage</a>
+
+</body>
+</html>

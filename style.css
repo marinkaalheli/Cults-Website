@@ -1,0 +1,124 @@
+/* validates fully as of Nov. 21, 2023 and Dec 5 and Dec 19 */
+/* making webpage background a shade of white */
+body{
+    background-color: #F4F3EE;
+}
+/* making a grid for our website to follow */
+.contentsGrid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    'header header'
+    'maincontent1 sidecontent1'
+    'maincontent1 sidecontent2'
+    'maincontent2 sidecontent3'
+    'maincontent2 sidecontent4'
+    'maincontent3 sidecontent5'
+    'maincontent3 sidecontent6';
+}
+/* additional rule to make links stand out a bit when you hover over them 
+    with your mouse by slightly making the link text increase in size */
+a:hover{
+    font-size: 1.1em;
+}
+/* align text for our header, assign it to specific grid area */
+.pageheader{
+    grid-area: header;
+    text-align: center;
+}
+
+/* decorating a link to look like a button */
+.readMoreButton {
+    display: inline-block;
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+    background-color: #d60000;
+    border: solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 1s ease-in-out; /* Add the transition property */
+}
+
+/* adding the color transition for our button */
+.readMoreButton:hover {
+    background-color: #6e7be3;
+}
+/*.readMoreButton:hover{
+    width: 200pt;
+    transition-timing-function: ease-in;
+}*/
+
+/* assign sidePosts to specific grid area, create a shadow around "border", 
+    change background color to white for contrast, make a margin */
+.intro{
+    grid-area: sidecontent1;
+    background-color: white;
+    margin: 10%;
+    box-shadow: 0px 4px 8px rgb(151, 151, 151);
+}
+.sideLinks{
+    grid-area: sidecontent5;
+    background-color: white;
+    margin: 10%;
+    box-shadow: 0px 4px 8px rgb(151, 151, 151);
+}
+
+.ads{
+    grid-area: sidecontent3;
+    /*margin: 10%;*/
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%; 
+    box-shadow: 0px 4px 8px rgb(151, 151, 151);
+
+}
+/* adding padding to text inside of sidePosts */
+#addSide{
+    padding: 2.5%
+}
+/* adding a margin for the "header" inside of sidePosts */
+#headerForAdditionalSidePosts{
+    margin: 2.5%;
+}
+/* adding padding to text everywhere */
+.text{
+    padding: 2.5%;
+}
+/* aligning our first research post and assigning it to specific grid-area
+    making a shadow to our "box", adding a margin for aesthetics, changing
+    background color to white for contrast */
+#one{
+    grid-area: maincontent1;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgb(151, 151, 151);
+    margin: 5%;
+}
+/* aligning our second research post and assigning it to specific grid-area
+    making a shadow to our "box", adding a margin for aesthetics, changing
+    background color to white for contrast */
+#two{
+    grid-area: maincontent2;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgb(151, 151, 151);
+    margin: 5%;
+}
+/* aligning our third research post and assigning it to specific grid-area
+    making a shadow to our "box", adding a margin for aesthetics, changing
+    background color to white for contrast */
+#three{
+    grid-area: maincontent3;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgb(151, 151, 151);
+    margin: 5%;
+}
+#video{
+    grid-area: sidecontent4;
+    box-shadow: 0px 4px 8px rgb(151, 151, 151);
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.additionalLinks{
+    padding: 2.5%;
+}

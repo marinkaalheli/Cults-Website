@@ -1,0 +1,149 @@
+/*Group Members: Marinka, Nkechi, Naomi
+Project Milestone One Table of Contents CSS
+Validates without errors as of Oct 17, Nov 21, Dec 5, Dec 19
+We didn't change anything for PM2 because it wasn't necessary, returning in because we didn't
+know whether or not we should reupload this according to no.4 in submission guidelines for pm2*/
+
+.contentsGrid{ /* Creating grid system to place links in */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+  'header header'
+  'mainLeft_col mainRight_col'
+  'oneLeft_col oneRight_col'
+  'twoLeft_col twoRight_col'
+  'threeLeft_col threeRight_col'
+  'fourLeft_col fourRight_col'
+  'fiveLeft_col fiveRight_col'
+  'sixLeft_col sixRight_col';
+}
+
+a:hover{
+  color: rgb(84, 144, 148);
+  font-size: 1.5em;
+}
+
+body{
+  background-color: rgb(198, 240, 193);
+}
+
+#tableOfContents{
+  grid-area: header;
+  background-color: rgb(252, 247, 205);
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+}
+
+#initialMilestones{
+  grid-area: mainLeft_col;
+  background-color: rgb(132, 177, 236);
+  padding: 1em;
+  border-radius: 2em;
+  border: solid white;
+}
+
+#initialDescription{
+  grid-area: mainRight_col;
+  background-color: pink;
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+}
+
+#pm1{
+  grid-area: oneLeft_col;
+  background-color: lightblue;
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+}
+
+#pm1desc{
+  grid-area: oneRight_col;
+  background-color: lavender;
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+}
+
+#pm2{
+  grid-area: twoLeft_col;
+  background-color: lightblue;
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+
+}
+
+#pm2desc{
+  grid-area: twoRight_col;
+  background-color: lavender;
+  padding: 1em;
+  border-radius: 33px; /*w3schools*/
+  border: solid white; /*w3schools*/
+}
+
+#pm3{
+  grid-area: threeLeft_col;
+  background-color: lightblue;
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+}
+
+#pm3desc{
+  grid-area: threeRight_col;
+  background-color: lavender;
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+}
+
+#pm4{
+  grid-area: fourLeft_col;
+  background-color: lightblue;
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+}
+
+#pm4desc{
+  grid-area: fourRight_col;
+  background-color: lavender;
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+}
+
+#pm5{
+  grid-area: fiveLeft_col;
+  background-color: lightblue;
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+}
+
+#pm5desc{
+  grid-area: fiveRight_col;
+  background-color: lavender;
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+}
+
+#pm6{
+  grid-area: sixLeft_col;
+  background-color: lightblue;
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+}
+
+#pm6desc{
+  grid-area: sixRight_col;
+  background-color: lavender;
+  padding: 1em;
+  border-radius: 33px;
+  border: solid white;
+}

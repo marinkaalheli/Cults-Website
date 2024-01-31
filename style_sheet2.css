@@ -1,0 +1,42 @@
+/* validates fully as of Nov. 21, 2023 and Dec 5 and Dec 19*/
+/* making webpage background a shade of white */
+body{
+    background-color: #F4F3EE;
+}
+/* aligning header to center in our additional webpages */
+.pageheader{
+    text-align: center;
+}
+/* aligning images to center in our additional webpages */
+.imgs{
+    text-align: center;
+}
+/* aligning text to center in our additional webpages */
+.text{
+    text-align: left;
+    padding: 2.5%
+}
+/* decorating a link to look like a button */
+.returnButton{
+    display: inline-block;
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+    background-color: #d60000;
+    border: solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 1s ease-in-out;
+}
+.returnButton:hover{
+    background-color: #6e7be3;
+}
+/* additional rule to make links stand out a bit when you hover over them 
+    with your mouse by slightly making the link text increase in size */
+a:hover{
+    font-size: 1.1em;
+}
+/* making each post title slightly bigger to stand out */
+.postTitles{
+    font-size: 1.12em;
+}
